@@ -45,6 +45,11 @@ Note that the current working directory of host machine is mounted on `/work` in
 
 # Trouble shooting
 
+## Command line
 On some systems you may need to explitely add ruby
 
     ruby bin/gen-pdf [dir]
+
+## Docker image
+* On Windows PowerShell remember to use ${pwd} rather than $(pwd)
+* If you get a “Release file is not yet valid” related to Debian, try restarting Docker
